@@ -367,6 +367,7 @@ html {
     transform: unset;
     width: 90%;
     margin: auto;
+    text-align: center;
 }
 div#skills, div#con {
     padding: 0px 11px 50px;
@@ -379,6 +380,7 @@ div#skills, div#con {
     background: transparent;
     color: #FFFFFF;
     border: 1px solid;
+    top:55%;
 }
 .pre {
     position: absolute;
@@ -386,11 +388,13 @@ div#skills, div#con {
     background: transparent;
     color: #FFFFFF;
     border: 1px solid;
+    top:55%;
 }
 .info-project{
     overflow: unset;
     height: auto;
     background-image: unset;
+    text-align: center;
 }
 .slide-work:hover .info-project{
     position: unset;
@@ -402,5 +406,17 @@ img#my-profile {
 }
 div#home .w-3 {
     text-align: center;
+}
+.floating{
+    top:unset;
+    transform: unset;
+    text-align: center;
+}
+div#home {
+    height: 100%;
+}
+.float-about h3:before{
+    margin-left: 29px;
+    left: unset;
 }
 }
