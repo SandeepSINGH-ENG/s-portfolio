@@ -318,7 +318,16 @@ footer {
     background: #1e1e1e;
     border-top: 1px solid #404040;
 }
-
+.slide-work.all {
+    height: 170px;
+    text-align: center;
+}
+.slide-work.all h1 {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
 .nav-list ul li a {
     color: #FFFFFF;
     text-decoration: none;
@@ -335,7 +344,62 @@ html {
     display: flex;
     justify-content: space-between;
 }
+.pop-hide{
+    display:none;
+}
+.pop-more {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000a1;
+    left: 0;
+    position: fixed;
+    z-index: 9999999999999999999;
+}
+.main-pop {
+    background: white;
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+.close {
+    position: absolute;
+    right: 10px;
+    top: 6px;
+    font-size: 23px;
+}
+.main-con ul li {
+    background: #efefef;
+    padding: 7px;
+    margin-bottom: 7px;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.main-con ul li a {
+    text-decoration: none;
+    color: black;
+}
+.main-con h1 {
+    font-size: 16px;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+}
+.close {
+    cursor: pointer;
+}
 @media only screen and (max-width: 600px) {
+    .main-con ul {
+        height: 67vh;
+        overflow: scroll;
+    }
+    .slide-work.all {
+        height: 324px;
+    }
     .nav-list.w-6 {
         border-bottom: 1px solid #FFFFFF;
         padding-bottom: 11px;

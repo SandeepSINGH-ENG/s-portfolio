@@ -13,3 +13,13 @@ $(".slick").slick({
           }
 }]
 });
+$(document).ready(function(){
+ $(".all").click(function(){
+$(".pop-more").removeClass("pop-hide");
+ });
+ $(".close").click(function(){
+  $(".pop-more").addClass("pop-hide");
+   });
+ });
+
+ 
