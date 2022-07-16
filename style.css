@@ -1,0 +1,406 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.w-2 {
+    width: 20%;
+}
+
+.w-6 {
+    width: 60%;
+}
+
+.w-5 {
+    width: 50%;
+}
+
+.w-7 {
+    width: 70%;
+}
+
+.w-3 {
+    width: 30%;
+}
+
+.nav-list ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.header {
+    padding: 15px 43px;
+    color: #FFFFFF;
+    position: fixed;
+    width: 100%;
+    background: #121212;
+    z-index: 9999999999;
+    top: 0;
+}
+
+body {
+    background: #121212;
+}
+
+.floating {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+img#my-profile {
+    width: 85%;
+    margin: auto;
+    padding-top: 95px;
+}
+
+.floating {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 43px;
+    color: #FFFFFF;
+}
+
+.intro h1 {
+    font-size: 56px;
+    font-family: 'Sacramento', cursive;
+    line-height: 15px;
+}
+
+.intro h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100px;
+}
+
+.intro b {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 26px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.con-center {
+    text-align: center;
+}
+
+.name {
+    font-family: 'Sacramento';
+    font-size: 36px;
+}
+
+.name.w-2.hide {
+    opacity: 0;
+}
+
+.header.flex {
+    align-items: center;
+}
+
+.mt-83 {
+    margin-top: 83px;
+}
+
+.image-about img {
+    width: 50%;
+}
+
+.image-about {
+    text-align: center;
+}
+
+.float-about {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 73%;
+    color: #FFFFFF;
+}
+
+.float-about h3 {
+    font-family: 'Montserrat';
+    font-size: 30px;
+    margin-bottom: 19px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.float-about h3:before {
+    content: ' ';
+    background: #1e1e1e;
+    top: 21px;
+    position: absolute;
+    width: 155px;
+    height: 20px;
+    left: 29px;
+    z-index: -1;
+}
+
+.float-about p {
+    font-size: 15px;
+    line-height: 26px;
+}
+
+div#skills h1,
+div#por h1,
+div#con h1 {
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 43px;
+    font-family: 'Montserrat';
+}
+
+div#skills h1 span,
+div#por h1 span,
+div#con h1 span {
+    background: #1e1e1e;
+    color: #1e1e1e;
+    position: absolute;
+    margin-left: -80px;
+    padding: 3px 43px;
+    z-index: -1;
+    font-size: 12px;
+    bottom: 0;
+}
+
+div#about-me {
+    background: url(images/dark.png);
+    background-attachment: fixed;
+    margin: 50px 0px;
+    padding: 50px 0px;
+}
+
+.proc {
+    background: #1e1e1e;
+    padding: 33px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 8px 3px #00000029;
+    margin: 20px;
+    color: #FFFFFF;
+}
+
+.path {
+    height: 10px;
+    background: #837d7d;
+    border-radius: 50px;
+}
+
+.src {
+    background: #FFFFFF;
+    height: 10px;
+    width: 98%;
+    border-radius: 50px;
+}
+
+.proc p {
+    padding-bottom: 10px;
+}
+
+div#skills,
+div#con {
+    padding: 0px 50px 50px;
+}
+
+div#home {
+    height: 100vh;
+}
+
+.info-project a {
+    padding: 0px 13px;
+    color: #FFFFFF;
+    font-size: 13px;
+}
+.slide-work {
+    background: #1e1e1e;
+    padding: 13px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 8px 3px #00000029;
+    margin: 20px;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.slide-work img {
+    width: 100%;
+}
+
+.info-project h1 {
+    font-size: 17px;
+    margin-bottom: 5px !important;
+    padding: 10px;
+}
+
+.info-project p {
+    font-size: 13px;
+    padding: 12px;
+}
+
+.info-project {
+    background-image: linear-gradient(to top, #000000, #1e1e1e70);
+    overflow: hidden;
+    height: 0;
+}
+
+.slide-work:hover .info-project {
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition-duration: 1s;
+    bottom: 0px;
+    min-width: 300px;
+}
+
+.pre {
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    transform: translateY(-50%);
+    z-index: 9999;
+    background: #FFFFFF;
+    padding: 10px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    line-height: 13px;
+}
+
+.next {
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    transform: translateY(-50%);
+    z-index: 9999;
+    background: #FFFFFF;
+    padding: 10px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    line-height: 13px;
+}
+
+.slick {
+    margin: 50px;
+}
+
+.proc ul {
+    list-style: none;
+    display: inline-flex;
+}
+
+.proc ul li a,
+.proc a {
+    color: #FFFFFF;
+    padding-right: 23px;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    color: #FFFFFF;
+    padding: 30px;
+    background: #1e1e1e;
+    border-top: 1px solid #404040;
+}
+
+.nav-list ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+#home, #skills, #por, #con, div#about-me .flex{
+max-width: 1366px;
+    margin-left: auto;
+    margin-right: auto;
+}
+html {
+  scroll-behavior: smooth;
+}
+.bind {
+    display: flex;
+    justify-content: space-between;
+}
+@media only screen and (max-width: 600px) {
+    .nav-list.w-6 {
+        border-bottom: 1px solid #FFFFFF;
+        padding-bottom: 11px;
+    }
+.w-5, .w-2, .w-3, .w-4, .w-6, .w-7, .w-8 {
+    width: 100%;
+}
+.flex{
+    flex-direction: column;
+}
+.header{
+    position: unset;
+    padding: 15px 0px;
+    text-align: center;
+}
+.intro h3 {
+    font-size: 30px;
+    line-height: 67px;
+}
+.intro h1 {
+    font-size: 36px;
+}
+.intro b{
+    letter-spacing: 7px;
+}
+.float-about{
+    position: relative;
+    top: unset;
+    transform: unset;
+    width: 90%;
+    margin: auto;
+}
+div#skills, div#con {
+    padding: 0px 11px 50px;
+}
+.slick {
+    margin: 50px 0px;
+}
+.next {
+    right: 20px;
+    background: transparent;
+    color: #FFFFFF;
+    border: 1px solid;
+}
+.pre {
+    position: absolute;
+    left: 20px;
+    background: transparent;
+    color: #FFFFFF;
+    border: 1px solid;
+}
+.info-project{
+    overflow: unset;
+    height: auto;
+    background-image: unset;
+}
+.slide-work:hover .info-project{
+    position: unset;
+}
+img#my-profile {
+    width: 44%;
+    margin: auto;
+    padding-top: 3px;
+}
+div#home .w-3 {
+    text-align: center;
+}
+}
