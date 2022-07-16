@@ -16,9 +16,12 @@ $(".slick").slick({
 $(document).ready(function(){
  $(".all").click(function(){
 $(".pop-more").removeClass("pop-hide");
+$("body").css("overflow", "hidden");
+
  });
  $(".close").click(function(){
   $(".pop-more").addClass("pop-hide");
+  $("body").css("overflow", "auto");
    });
  });
 
